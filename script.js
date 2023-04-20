@@ -35,8 +35,21 @@ function foo() {
     span.style.color="pink";
     document.body.append(span);
 }
+/* 3 Display the mouse X and Y coordinates in a <span> tag when you click on a <h1> tag which contains a paragraph.
 
- /* Write a Javascript code for character counts in the textarea. */ 
+ */
+var div=document.createElement("div");
+div.innerHTML="this is div";
+div.addEventListener("mouseover",foo);
+document.body.append(div);
+
+function foo(event){
+    var span=document.createElement("span");
+    span.innerHTML=`Client x:${event.clientX} and Client y:${event.clientY}`
+    document.body.append(span);
+}
+
+ / * 4 Write a Javascript code for character counts in the textarea. */ 
  let res=document.querySelector("textarea").addEventListener("keyup",(event)=>console.log(event.target.textLength));
 console.log(res); 
 
