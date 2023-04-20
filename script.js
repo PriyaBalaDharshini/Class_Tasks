@@ -35,3 +35,12 @@ function foo() {
     span.style.color="pink";
     document.body.append(span);
 }
+
+ /* Write a Javascript code for character counts in the textarea. */ 
+ let res=document.querySelector("textarea").addEventListener("keyup",(event)=>console.log(event.target.textLength));
+console.log(res); 
+
+
+/* HTML */
+/*  <textarea name="" id="" cols="30" rows="10"></textarea>
+    <script src="script.js"></script> */
